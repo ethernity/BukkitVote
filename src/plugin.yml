@@ -1,0 +1,17 @@
+name: BukkitVote
+main: com.fabianbohr.bukkitvote.BukkitVote
+version: 0.7
+
+commands:
+  vote:
+    description: Vote for specific events.
+    usage: /<command>
+  bvunmute:
+    description: unmute a muted player (Ops only).
+    usage: /<command> <name>
+  fvote:
+    description: forces a vote (Ops only).
+    usage: /<command> <args>
+  accept:
+    description: accepts a vote
+    usage: /<command> <args>
