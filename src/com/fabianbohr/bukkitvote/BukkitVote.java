@@ -21,7 +21,7 @@ import org.bukkit.plugin.Plugin;
  * @author ethernity
  */
 public class BukkitVote extends JavaPlugin {
-    public static String version = "0.7";
+    public static String version = "0.71";
     public int majority = 66;
     public int minplayers = 0;
     public int time = 0;

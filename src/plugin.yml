@@ -1,6 +1,6 @@
 name: BukkitVote
 main: com.fabianbohr.bukkitvote.BukkitVote
-version: 0.7
+version: 0.71
 
 commands:
   vote:
