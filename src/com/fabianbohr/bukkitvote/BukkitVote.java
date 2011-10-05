@@ -75,9 +75,7 @@ public class BukkitVote extends JavaPlugin {
         this.getServer().getPluginManager().registerEvent(Type.PLAYER_QUIT, listener, Priority.Low, this);
         this.getServer().getPluginManager().registerEvent(Type.PLAYER_CHAT, muteListener, Priority.Highest, this);
         this.getServer().getPluginManager().registerEvent(Type.PLAYER_LOGIN, banListener, Priority.Highest, this);
-        this.getServer().getPluginManager().registerEvent(Type.PLAYER_JOIN, listener, Priority.Normal, this);
         this.getServer().getPluginManager().registerEvent(Type.PLAYER_TELEPORT, listener, Priority.Low, this);
-        this.getServer().getPluginManager().registerEvent(Type.PLAYER_GAME_MODE_CHANGE, listener, Priority.Low, this);
         this.getCommand("bvunmute").setExecutor(new UnMuteCommandExecutor(muteListener));
         this.getCommand("vote").setExecutor(new VoteCommandExecutor(listener, this));
         this.getCommand("fvote").setExecutor(new ForceVoteCommand(listener, this));

@@ -209,33 +209,6 @@ public class VoteListener extends org.bukkit.event.player.PlayerListener {
         }
         return s;
     }
-    @Override
-    public void onPlayerJoin(PlayerJoinEvent event) {
-//        System.out.println("Listening join of "+event.getPlayer().toString());
-//        System.out.println(bv.getServer().getDefaultGameMode().toString());
-        if(bv.getServer().getDefaultGameMode().equals(GameMode.CREATIVE)) {
-//           System.out.println("[BV] Making creative");
-            if(event.getPlayer().getGameMode().equals(GameMode.SURVIVAL)) {
-            event.getPlayer().setGameMode(GameMode.CREATIVE);
-//            System.out.println("Setting Creative");
-            }
-        } else if(bv.getServer().getDefaultGameMode().equals(GameMode.SURVIVAL)) {
-//            System.out.println("[BV] Making survival");
-            event.getPlayer().setGameMode(GameMode.SURVIVAL);
-        }
-    }
-//        public void onPlayerLogin(PlayerLoginEvent event) {
-//        System.out.println("[BV] Making creative on login");
-//        System.out.println("[BV]")
-//        if(bv.getServer().getDefaultGameMode().equals(GameMode.CREATIVE)) {
-//            System.out.println("[BV] Making creative");
-//            if(event.getPlayer().getGameMode().equals(GameMode.SURVIVAL))
-//            event.getPlayer().setGameMode(GameMode.CREATIVE);
-//        } else if(bv.getServer().getDefaultGameMode().equals(GameMode.SURVIVAL)) {
-//            
-//            event.getPlayer().setGameMode(GameMode.SURVIVAL);
-//        }
-//    }
     
 
     
